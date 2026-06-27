@@ -22,7 +22,7 @@ document.getElementById("contactForm").onsubmit = function () {
         return false;
     }
 
-    if (phone.length != 10) {
+    if (phone.length != 10 || isNaN(phone)) {
         alert("Enter a valid 10-digit phone number.");
         return false;
     }
